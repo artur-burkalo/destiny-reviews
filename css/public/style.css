@@ -1,0 +1,78 @@
+.dr-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    min-width: 100%;
+}
+
+.dr-block .dr-box {
+    padding: 20px;
+    margin: 15px !important;
+    width: 30%;
+    min-width: 300px;
+    max-width: 100%;
+    transition-duration: .3s;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dr-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px 3px rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.dr-box p {
+    font-style: italic;
+    font-size: 15px;
+    margin: 0 0 10px 0;
+}
+
+.dr-clinet {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.dr-image {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px
+}
+
+.dr-client-div {
+    margin-left: 15px
+}
+
+.dr-client-position {
+    font-size: 15px
+}
+
+.dr-stars {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px
+}
+
+.dr-star-ratings {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px
+}
+
+@media only screen and (max-width:945px) {
+    .dr-block .dr-box {
+        min-width: 45%;
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .dr-block .dr-box {
+        min-width: 90%;
+        width: 90%;
+    }
+}
